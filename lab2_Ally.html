@@ -91,7 +91,21 @@
 
         console.log('\n----- EXERCISE -----')
 
+        let user = prompt("Enter a value: ").trim();
+        let num = Number(user);
+        let isNumber = !isNaN(num) && userInput !== "";
 
+        if (isNumber) {
+            if (num < 0) {
+                console.log(`${num} is a negative number`);
+            } else if (num > 0) {
+                console.log(`${num} is a positive number`);
+            } else {
+                console.log(`${num} is zero`);
+            }
+        } else {
+            console.log(`"${user}" is a string`);
+        }
 
     </script>
 </body>
