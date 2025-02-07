@@ -138,9 +138,21 @@ console.log("\n-------- EXERCISE B -------------")
 
 const password = 1285
 let attemptcounter = 0;
-let usr = parseInt(prompt("Enter your pin: "))
+let usr;
 
-while(usr !== password){
-    attemptcounter++
-    usr = parseInt(prompt("Wrong! Enter your pin: "))
+while(attemptcounter < 3){
+    usr = parseInt(prompt("Enter your pin: "))
+    if(usr === password){
+        console.log("Your pin is correct!")
+        break
+    }
+    else{
+        attemptcounter++
+    }
+    if(attemptcounter < 3){
+        console.log("Incorrect! Try again")
+    }
+}    
+if(attemptcounter===3){
+    console.log("Your account is locked!")
 }
