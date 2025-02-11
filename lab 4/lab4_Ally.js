@@ -33,3 +33,33 @@ function snake_eyes(x,y){
         console.log("Not a snake eyes!")
     }
 }
+// call snake_eyes function
+snake_eyes(3,2)
+snake_eyes(1,1)
+
+console.log("\n------------ Example 5: function that returns value -----------")
+// function that returns the double of the number
+function doublenumber(n){
+    n *= 2 // n*2
+    return n
+}
+// call function
+let number = 5
+let dbnum = doublenumber(number)
+console.log(`The double of number ${number} is ${dbnum}`)
+
+console.log("\n------------ Example 6: function that returns value -----------")
+// function that returns 'true' if a temperature is greater than 75. Otherwise, it returns a 'false' if the temperature is less than or equal to 75
+function checktemp(temperature){
+    if(temperature>75){
+        return true
+    }
+    else{
+        return false
+    }    
+}
+
+// call function
+let t = 100
+let temp_result = checktemp(t)
+console.log(`Is the temperature greater than 75? ${temp_result}`)
