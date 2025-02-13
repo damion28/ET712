@@ -97,7 +97,7 @@ console.log("\n---------------- Example 8: random number --------------------")
 
 // function to randomly generate a number between -5 and 5
 function randnumber() {
-    let p = -5 + Math.random(Math.random() * 10) // we put 10 because 10 + (-5) is equal to 5.
+    let p = -5 + Math.round(Math.random() * 10) // we put 10 because 10 + (-5) is equal to 5.
     return p;
 }
 
@@ -107,10 +107,10 @@ console.log("\n---------- Example 9: random number in a list (array) ----------"
 // function to randomly pick a color from a list of colors
 
 let colors = ["red", "green", "blue", "megenta", "gray"]
-function randomcolor(picked_index){
+function randomcolor(){
     let list_size = colors.length       // find the length of the list
     let last_index = list_size - 1      // find the last index of the list
-    let random_index = Math.random(Math.random() * last_index)      // randomly pick a number between 0 and the last index
+    let random_index = Math.round(Math.random() * last_index)      // randomly pick a number between 0 and the last index
     return colors[random_index]     // return the random picked color
 }
 
