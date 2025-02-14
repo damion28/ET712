@@ -121,13 +121,13 @@ console.log("\n---------- EXERCISE -------------")
 
 function checkName(){
     let name
-    while (true){
+    while(true){
         name = prompt("Enter your name: ")
 
-        if (name === null || name.trim() === ""){
+        if(name === null || name.trim() === ""){
             name = prompt("You forgot to enter a name. Enter a name again: ")
         }
-        else if (!isNaN(name)){
+        else if(!isNaN(name)){
             name = prompt(`${name} is invalid! Enter a name again: `)
         }
         else{
