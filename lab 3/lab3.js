@@ -150,9 +150,17 @@ while(attemptcounter < 3){
         attemptcounter++
     }
     if(attemptcounter < 3){
+<<<<<<< HEAD
         usr = parseInt(prompt("Try again. Enter your pin: "))
+=======
+        console.log("Incorrect! Try again")
+>>>>>>> 3c84380e5e9d1eff34505697181d23f348e86036
     }
 }    
 if(attemptcounter===3){
     console.log("Your account is locked!")
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 3c84380e5e9d1eff34505697181d23f348e86036
