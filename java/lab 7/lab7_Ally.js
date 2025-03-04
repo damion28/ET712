@@ -26,3 +26,11 @@ btn.addEventListener("click", function(){
     alert("BTN WAS CLICKED")
 })
 
+console.log("\n---- Example 4: click event to change text content ----")
+// select the elements, 'btnmsg', 'msg'
+let btnmsg = document.querySelector(".btnmsg")
+let msg = document.querySelector(".msg")
+// add an event to 'msg' that changes the text load to "Damion Ally"
+btnmsg.addEventListener("click", function(){
+    msg.textContent = "Damion Ally"
+})
