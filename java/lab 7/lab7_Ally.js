@@ -34,3 +34,21 @@ let msg = document.querySelector(".msg")
 btnmsg.addEventListener("click", function(){
     msg.innerHTML = "Good afternoon <b> Damion Ally </b>"
 })
+
+console.log("\n---- Example 5: Changing shapes mini-app ----")
+// select elements
+let shape = document.querySelector(".shape")
+let btncircle = document.querySelector(".btncircle")
+let btnsquare = document.querySelector(".btnsquare")
+let btnrectangle = document.querySelector(".btnrectangle")
+
+// add an event to each button
+btncircle.addEventListener("click", function(){
+    shape.className = "circle"
+})
+btnsquare.addEventListener("click", function(){
+    shape.className = "square"
+})
+btnrectangle.addEventListener("click", function(){
+    shape.className = "rectangle"
+})
