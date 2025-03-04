@@ -17,3 +17,12 @@ console.log("\n---- example 2 loop through each element in a list list ----")
 for(let n = 0; n<methods.length; n++){
     console.log(methods[n])
 }
+
+console.log("\n---- Example 3: CLICK EVENT ----")
+// select the button
+let btn = document.querySelector(".btnclick")
+// add an event (click) to btn
+btn.addEventListener("click", function(){
+    alert("BTN WAS CLICKED")
+})
+
