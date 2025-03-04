@@ -32,5 +32,5 @@ let btnmsg = document.querySelector(".btnmsg")
 let msg = document.querySelector(".msg")
 // add an event to 'msg' that changes the text load to "Damion Ally"
 btnmsg.addEventListener("click", function(){
-    msg.textContent = "Damion Ally"
+    msg.innerHTML = "Good afternoon <b> Damion Ally </b>"
 })
