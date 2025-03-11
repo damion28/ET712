@@ -52,3 +52,57 @@ btnsquare.addEventListener("click", function(){
 btnrectangle.addEventListener("click", function(){
     shape.className = "rectangle"
 })
+
+/**
+ * Tuesday, March 11, traditional events
+ */
+//onmouseout event
+// collect the element
+let event6 = document.querySelector(".event6")
+// add a mouseout event
+event6.onmouseout = function(){
+    alert("MOUSE OUT - Example 6")
+}
+
+// example 7
+// inline event
+function openalert(){
+    alert("CLICK EVENT - EXAMPLE 7")
+}
+
+// example 8 mouseover event
+// change the background color of a div when the mouse hover the element
+// collect element
+let divexample8 = document.querySelector(".divexample8")
+divexample8.onmouseout = function(){
+    let randcolor = Math.floor(Math.random()*255)
+    divexample8.style.backgroundColor = `rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)}`
+}
+
+// example 9: keyboard event
+let inputex9 = document.querySelector(".inputex9")
+let ex9paragraph = document.querySelector(".ex9paragraph")
+
+inputex9.onkeydown = function(event){
+    ex9paragraph.innerHTML = `key ${event.key} was pressed`
+}
+
+/**
+ * LAB EXERCISE
+ */
+// EXERCISE
+// note: use querySelector() or querySelectorAll()
+// collect elements: search for the first p with class ps1
+// add a mouseout event to change the text content to "STUDENT'S FULL NAME"
+
+
+// search for the second p with class ps2
+// add a click event to the ps2 to change the font-size to 25px  and color to olive when is clicked
+
+
+// search for the first div with class divs2
+// add a click event to change the background color to indigo
+
+
+// search for the second div with class divs2
+// add a keydown event to change the width of divs2 to 300px
