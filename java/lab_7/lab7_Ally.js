@@ -90,19 +90,29 @@ inputex9.onkeydown = function(event){
 /**
  * LAB EXERCISE
  */
-// EXERCISE
-// note: use querySelector() or querySelectorAll()
-// collect elements: search for the first p with class ps1
-// add a mouseout event to change the text content to "STUDENT'S FULL NAME"
 
+let ps1 = document.querySelector(".ps1");
+ps1.addEventListener("mouseout", function () {
+    ps1.textContent = "Damion Ally";
+});
 
-// search for the second p with class ps2
-// add a click event to the ps2 to change the font-size to 25px  and color to olive when is clicked
+let ps2 = document.querySelector(".ps2");
+ps2.addEventListener("click", function () {
+    ps2.style.fontSize = "25px";
+    ps2.style.color = "olive";
+});
 
+let divs2 = document.querySelector(".divs2");
+divs2.addEventListener("click", function () {
+    divs2.style.backgroundColor = "indigo";
+});
 
-// search for the first div with class divs2
-// add a click event to change the background color to indigo
+document.addEventListener("keydown", function () {
+    divs2.style.width = "300px";
+});
 
+let divs3 = document.querySelector(".divs3");
 
-// search for the second div with class divs2
-// add a keydown event to change the width of divs2 to 300px
+divs3.addEventListener("click", function () {
+    divs3.style.width = "300px";
+});
