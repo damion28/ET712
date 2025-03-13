@@ -47,3 +47,18 @@ linkyt.addEventListener("click", function(event){
     event.preventDefault()
     alert("YouTube website is off")
 })
+
+/**
+ * example 4
+ */
+// collect element
+let modalwindow = document.querySelector(".modalwindow")
+let linkreadmore = document.querySelector(".linkreadmore")
+let closex = document.querySelector(".closex")
+
+linkreadmore.addEventListener("click", function(){
+    modalwindow.style.display = "block"
+})
+closex.addEventListener("click", function(){
+    modalwindow.style.display = "none"
+})
