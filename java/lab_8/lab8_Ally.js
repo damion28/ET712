@@ -62,3 +62,21 @@ linkreadmore.addEventListener("click", function(){
 closex.addEventListener("click", function(){
     modalwindow.style.display = "none"
 })
+
+// EXERCISE
+
+
+let circleCounter = document.querySelector(".circlecounter");
+let resetBtn = document.querySelector(".resetbtn");
+
+let count = 0;
+
+circleCounter.addEventListener("click", function() {
+    count++;
+    circleCounter.textContent = count;
+});
+
+resetBtn.addEventListener("click", function() {
+    count = 0;
+    circleCounter.textContent = count;
+});
