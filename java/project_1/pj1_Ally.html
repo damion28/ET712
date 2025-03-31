@@ -9,14 +9,14 @@
 <body>
     <header class="header">
         <section class="logo">
-            <img src="images/colorfulhand.png" alt="icon of colorful child handprint"title="123 KIDS">
+            <img src="images/colorfulhand.png" alt="icon of colorful child handprint" title="123 KIDS">
         </section>
         <section class="title">123 KIDS</section>
     </header>
 
     <div id="content">
         <h4>Welcome everyone!</h4>
-        <p>Thanks for visiting 123 KIDS! Our website offers lots of fun activies to learn and play!</p>
+        <p>Thanks for visiting 123 KIDS! Our website offers lots of fun activities to learn and play!</p>
         <p>Scroll below to see some of our activities!</p>
     </div>
 
@@ -47,10 +47,38 @@
                 <br>
                 <button class="btnpressme btnshapes">View Shapes</button>
             </div>
-            
+        </section>
+
+        <section id="interactive-games">
+            <h2>Interactive Games</h2>
+        
+            <div class="interactive-game">
+                <h3>Guess the Color</h3>
+                <p>Click the button to see a random color name. Try to guess if it matches!</p>
+                <button onclick="showRandomColor()">Show Color</button>
+                <p id="colorDisplay"></p>
+                
+                <button id="yesButton" style="display: none;" onclick="checkGuess(true)">Yes</button>
+                <button id="noButton" style="display: none;" onclick="checkGuess(false)">No</button>
+                
+                <p id="feedback"></p>
+            </div>
+        
+            <div class="interactive-game">
+                <h3>Shape Matching</h3>
+                <p>Click on a shape name to reveal its picture!</p>
+                <button onclick="showShape('circle')">Circle</button>
+                <button onclick="showShape('square')">Square</button>
+                <button onclick="showShape('triangle')">Triangle</button>
+                <div id="shapeDisplay"></div>
+            </div>
+        </section>
+
+        <section class="topcontainer">
+            <a class="toplink" href="#">Top</a>
         </section>
     </main>
-    
+
     <script src="pj1_Ally.js"></script>
 </body>
 </html>
