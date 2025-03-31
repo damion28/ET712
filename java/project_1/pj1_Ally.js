@@ -1,12 +1,23 @@
-let btnpressme = document.querySelector(".btnpressme")
+let btnpressmeColors = document.querySelector(".btncolors");
 
-btnpressme.addEventListener("click", function(e){
-    if(e.target.textContent === "View Colors"){
-        e.target.textContent = "Loading..."
+btnpressmeColors.addEventListener("click", function(e) {
+    if (e.target.textContent === "View Colors") {
+        window.location.href = "https://www.tinytap.com/activities/g2ph4/play/fantastic-color-game";
     }
-    else{
-        e.target.textContent = "View Colors"
+});
+
+let btnpressmeNumbers = document.querySelector(".btnnumbers");
+
+btnpressmeNumbers.addEventListener("click", function(e) {
+    if (e.target.textContent === "View Numbers") {
+        window.location.href = "https://www.topmarks.co.uk/learning-to-count/teddy-numbers";
     }
-    // toggle between class 'btnactive' and 'btnpressme'
-    e.target.classList.toggle("btnactive")
-})
+});
+
+let btnpressmeShapes = document.querySelector(".btnshapes");
+
+btnpressmeShapes.addEventListener("click", function(e) {
+    if (e.target.textContent === "View Shapes") {
+        window.location.href = "https://www.topmarks.co.uk/symmetry/symmetry-matching";
+    }
+});

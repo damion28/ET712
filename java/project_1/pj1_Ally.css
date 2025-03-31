@@ -32,8 +32,13 @@ img{width: 100%; display: block;}
 }
 .cardscontainer{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+}
+.card {
+    flex: 0 0 30%;
+    scroll-snap-align: center;
 }
 .card, .verticalcard{
     height: auto;
@@ -63,10 +68,14 @@ img{width: 100%; display: block;}
 }
 .btnpressme{
     display: block;
+    width: fit-content;
+    margin: 0 auto;
     padding: 1em 2em;
     border-radius: 10px;
     background-color: rgb(246, 246, 6);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    text-align: center;
 }
 .btnactive{
     background-color: rgb(246, 246, 6);
