@@ -1,0 +1,149 @@
+* {box-sizing: border-box;}
+img{
+    width: 100%;
+    display: block;
+}
+.header{
+    background-color: orange;
+    display: flex;
+}
+.logo{
+    width: 10%;
+    padding: 1em;
+}
+.title{
+    width: 50%;
+    text-align: center;
+    padding: 1em;
+    font-size: 2em;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#content{
+    width: 2000;
+    padding: 1em;
+    background-color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.title{
+    color: black;
+    text-align: right;
+}
+.subtitle{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cardscontainer{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+}
+.card{
+    flex: 0 0 30%;
+    scroll-snap-align: center;
+}
+.card, .verticalcard{
+    height: auto;
+    width: 400px;
+    box-shadow: 1px 1px 5px gray;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0% 1%;
+}
+.card img{
+    height: 250px;
+}
+.card p{
+    padding: 1em;
+}
+.card a{
+    display: block;
+    background-color: darkblue;
+    padding: whitesmoke;
+    text-align: center;
+    font-weight: 900;
+    text-decoration: none;
+}
+.card a:hover{
+    opacity: 0.6;
+    font-size: 1.05em;
+}
+.btnpressme{
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border-radius: 10px;
+    background-color: rgb(246, 246, 6);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+.btnactive{
+    background-color: rgb(246, 246, 6);
+    font-weight: bolder;
+}
+.cardsentence{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#interactive-games{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    clear: both;
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.interactive-game{
+    display: block;
+    width: 80%;
+    max-width: 500px; 
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.interactive-game button{
+    display: block;
+    margin: 10px auto;
+}
+button{
+    padding: 8px 15px;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover{
+    background-color: darkorange;
+}
+html{
+    scroll-behavior: smooth;
+}
+.topcontainer{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(200, 200, 200, 0.6);
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    border-radius: 50%;
+    text-align: center;
+    display: none;
+}
+
+.toplink{
+    color: black;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+}
+.toplink:hover {
+    color: crimson;
+    font-weight: bolder;
+}

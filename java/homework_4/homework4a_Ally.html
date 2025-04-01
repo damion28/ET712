@@ -1,0 +1,41 @@
+<!-- EXERCISE 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework 4, form validation</title>
+    <link rel="stylesheet" href="homework4a_Ally.css">
+</head>
+<body>
+    <form id="myform">
+        <section class="formcontrol">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" placeholder="Enter username...">
+            <p class="errormsg" id="username-error">Please enter a username</p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" placeholder="Enter email...">
+            <p class="errormsg" id="email-error">Please enter a valid email</p>
+        </section>
+
+        <section class="formcontrol">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter password...">
+            <p class="errormsg" id="password-error">Password must be at least 8+ characters and include #, $, or %</p>
+            <p class="password-instructions">Password must be at least 8 characters long and include one of the following special characters: #, $, or %.</p>
+        </section>        
+
+        <button type="submit" class="btnsubmit">Submit Form</button>
+    </form>
+
+    <div class="greeting">
+        <p>Welcome to form event <span class="greetuser">testing</span></p>
+    </div>
+
+    <script src="homework4a_Ally.js"></script>
+</body>
+</html>
