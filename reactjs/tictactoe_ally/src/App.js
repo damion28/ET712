@@ -68,7 +68,7 @@ function calculateWinner(squares) {
 
   return (
     <div>
-      <h1 className='title'>Tic Tac Toe by 'student's name'</h1>
+      <h1 className='title'>Tic Tac Toe by Damion Ally</h1>
       <div className='boardcontainer'>
       <div className="status">{status}</div> 
         <div className="board-row">
