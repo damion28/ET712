@@ -13,7 +13,6 @@ img{width: 100%; display: block;}
 /* card */
 .card{
   width: 250px;
-  box-shadow: 2px 2px 5px gray;
   border-radius: 10px;
   padding: 1rem;
   margin: 1rem;
@@ -31,13 +30,69 @@ img{width: 100%; display: block;}
   color: gray;
   font-size: 0.8em;
 }
-.card:hover{
-  box-shadow: none;
-  border: solid 3px gray;
 
-}
 /* App.js */
 .maincontainer{
   display: flex;
   justify-content: center;
+}
+/* feedback.js */
+.feedbackcontainer{
+  width: 300px;
+  box-shadow: 2px 2px 5px gray;
+  border-radius: 5px;
+  margin: 2%;
+  overflow: hidden;
+}
+.content{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.description{
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}
+.cardfooter{
+  background-color: darkblue;
+  text-align: center;
+  color: white;
+  padding: 5px;
+  margin-top: 2rem;
+}
+.feedbackcontainer:hover{
+  box-shadow: none;
+  border: solid 3px gray;
+}
+/* modelwindow.js */
+.modelwindow{
+  background-color: rgba(50,50,50,0.6);
+  position: fixed;
+  inset: 0% 0% 0% 0%;
+  display: none;
+}
+.modelcontent{
+  background-color: white;
+  width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+}
+.modelheader{
+  display: flex;
+  text-align: center;
+  color: darkblue;
+}
+.modelheader p:nth-child(1){width: 92%;}
+.commentarea{width: 90%; height: 3rem;}
+.btnpostfeedback{width: 90%;
+  background-color: darkblue;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+.btnpostfeedback:hover, .closemodel:hover{
+  background-color: crimson;
+  font-weight: bolder;
+  cursor: pointer;
 }
