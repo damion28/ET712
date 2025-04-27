@@ -1,0 +1,56 @@
+/* Apply peachy background to the entire body */
+body {
+  background-color: #ffe5b4;  /* Peachy color */
+  margin: 0;
+  padding: 0;
+}
+
+/* The App container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* The container holding all product cards */
+.product-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Product Card styling - white background */
+.product-card {
+  background-color: white;  /* White background for product cards */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product image style */
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Product name styling */
+.product-name {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Product price styling */
+.product-price {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Product status styling */
+.product-status {
+  font-size: 0.9rem;
+  color: green;
+}
