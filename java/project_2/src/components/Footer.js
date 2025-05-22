@@ -10,7 +10,8 @@ function Footer() {
       }}
     >
       <p>© 2025 Headspace Audio</p>
-      <p>Contact: damion.ally92@student.qcc.cuny.edu</p>
+      <p>Email: damion.ally92@student.qcc.cuny.edu</p>
+      <p>Number: (347)-123-4567</p>
     </footer>
   );
 }
